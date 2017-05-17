@@ -3,10 +3,15 @@
 Languages/frameworks used for implementation
 
  Ruby 2.1.0 – Programming language
+
  Rails 4.1.9 – Back-end framework
+
  SQLite3 – Database backend
+
  Devise – User authentication
+
  Paperclip – Image Upload feature
+
  Bootstrap – UI – Look and feel
 
 Functionalities
