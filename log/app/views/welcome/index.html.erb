@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mobile World</title>
+	<link href='https://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h4>Welcome to Mobile<span>WORLD</span>!</h4>
+<%= image_tag("world.png", height: '350px', width: '350px') %>
+<br>
+<br>
+
+<% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+  <br><br>
+  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'btn btn-success' %> 
+  &nbsp;&nbsp;
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'btn btn-success'  %>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'btn btn-success link'  %> 
+  &nbsp;&nbsp;
+  <%= link_to "Login", new_user_session_path, :class => 'btn btn-success'  %>
+<% end %>
+	
+</div>
+</body>
+</html>
+
+
+
