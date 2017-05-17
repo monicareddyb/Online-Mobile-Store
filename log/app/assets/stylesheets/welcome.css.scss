@@ -1,0 +1,115 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.color1{color: #ff7aca  !important;}
+
+h4{
+		text-align: center;
+		color: #FFF6A2 !important;
+		font-size: 65px !important;
+	}
+	
+h3{
+text-align: center;
+		color: #FFF6A2 !important;
+		font-size: 20px !important;
+}
+
+.input-append{
+
+color: #ff1aa3  !important;
+}
+
+.mobiles {
+    position: relative;
+    overflow: hidden;
+}
+
+.mobiles:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url("symphony.png");
+    background-repeat: repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+h4 span{
+	color: #7cfc00 !important;
+}
+
+
+.glyphicon.glyphicon-user {
+    font-size: 100px;
+	color:#7cfc00;
+}
+
+.nav.navbar-nav li a{
+    color: #ff7aca  !important;
+}
+.nav.navbar-nav :hover{
+	background-color: transparent !important;
+    color: #ff1aa3  !important;
+}
+
+.btn-primary.outline{
+color: #ff1aa3  !important;
+border-color: #ff1aa3  !important;
+}
+.navbar-brand{
+	color: #FFF6A2 !important;
+}
+
+
+.btn-primary { background-color: #ff7aca !important; border-color: #ff1aa3  !important;} //button
+
+.btn-primary:hover { background-color: #ff1aa3 !important; } //hover
+
+
+
+.btn-success { background-color: #7cfc00 !important; } //button
+
+.btn-success:hover { background-color: #63c700 !important; } //hover
+
+body{
+		color:#FFF6A2 !important;
+		text-align: center;
+        background-image: url("binding_dark_@2X.png");
+		background-size: 360px 360px;
+		background-repeat: repeat;
+}
+
+.center{
+padding: 0px 0px 0px 400px;
+}
+
+.left{
+padding: 0px 0px 0px 400px;
+text-align: left;
+}
+.left1{
+text-align: left;
+}
+.navbar{
+    margin-bottom: 0px !important;
+}
+.cart{
+padding: 0px 300px 0px 300px;
+}
+
+.cart .glyphicon.glyphicon-shopping-cart{
+ font-size: 100px;
+	color:#7cfc00;
+}
