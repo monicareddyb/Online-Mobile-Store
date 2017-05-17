@@ -1,0 +1,26 @@
+<div class="left">
+<%= image_tag @product.image.url(:large) %>
+<br><br>
+<dl>
+  <dt>Name</dt>
+  <dd><%= @product.name %></dd>
+  <dt>Price</dt>
+  <dd><%= @product.price %></dd>
+  <dt>Quantity</dt>
+  <dd><%= @product.quantity %></dd>
+  <dt>Model Number</dt>
+  <dd><%= @product.modelNumber %></dd>
+  <dt>Color</dt>
+  <dd><%= @product.color %></dd>
+  <dt>Make</dt>
+  <dd><%= @product.make %></dd>
+  <dt>Storage</dt>
+  <dd><%= @product.storage %></dd>
+  <dt>Operating System</dt>
+  <dd><%= @product.os %></dd>
+  <dt>Other Specifications</dt>
+  <dd><%= @product.specification %></dd>
+</dl>
+<br><br> 
+ <%= link_to 'Back', products_path, :class=>"btn btn-warning" %>
+ </div>

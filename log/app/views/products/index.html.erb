@@ -1,0 +1,56 @@
+
+<div id="myCarousel" class="carousel">
+          <div class="carousel-inner">
+            <div class="active item"><%= image_tag("slide1.png", height: '400px', width: '1400px') %></div>
+        <div class="item"><%= image_tag("slide2.jpg", height: '400px', width: '1400px') %></div>
+      
+          </div>
+
+      <a class="carousel-control left1" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+
+<p><br>
+</p>
+
+<div class="container-fluid">
+
+<p><br>
+</p>
+<div class="row-fluid">
+<div class="col-md-3">
+
+<br><br>
+<div>
+  <% if can? :update, @products %>
+	 <%= link_to 'Add new product', new_product_path , :class=>"btn btn-primary"%>
+	<% end %>
+</div>
+
+</div>
+
+<div class="col-md-9">
+	<div class="row mobiles">
+	<% @products.each do |product| %>
+	
+	<div class="col-sm-6 col-md-3">
+    <div class="thumbnail">
+     <div>
+      <%= image_tag product.image.url(:medium) %>
+      <% if can? :update, @products %>
+	
+    <%= link_to 'Delete', product_path(product),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+               <% end %>
+	  </div>
+    
+    </div>
+	</div>	
+	 <% end %>
+	 </div>
+
+
+</div>
+</div>
+</div>
